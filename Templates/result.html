@@ -1,0 +1,51 @@
+<!Doctype html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>Sentiment Analysis Result</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                    color: #333;
+                    text-align: center;
+                    padding: 50px;
+                }
+                .result {
+                    font-size: 48px;
+                    margin-bottom: 30px;
+                }
+                .probability {
+                    font-size: 24px;
+                    margin-bottom: 30px;
+                    color: #666;
+                }
+                .back-button {
+                    margin-top: 100px;
+                    padding: 10px 20px;
+                    font-size: 18px;
+                    background-color: #28a745;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+                .back-button:hover {
+                    background-color: #218838;
+                }
+            </style>
+
+    </head>
+        <body>
+            <div class='result'>
+                {{sentiment}}
+            </div>
+            <div class='probability'>
+                Probability : {{probability * 100 | round(2)}}%
+            </div>
+            <a href="/" class="back-button">Go Back</a>
+        </body>
+
+</html>

@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Sentiment Analysis Prediction</title>
+    </head>
+    <style>
+        .predict {
+            font-size: 30px;
+            background-color:lightblue;
+            border-radius: 10px;
+        }
+    </style>
+    <body>
+        <div className='Container'>
+            <h1>Sentiment Analysis Prediction</h1>
+            <form action="/predict" method="post">
+                <input type="text" name="data" placeholder="Enter your data">
+                <input class = 'predict' type="submit" value="Predict">
+            </form>
+        </div>
+        <footer>
+            <p>&copy; 2024 Sentiment Analysis App</p>
+        </footer>
+    </body>
+</html>
